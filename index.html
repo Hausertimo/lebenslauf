@@ -1,0 +1,194 @@
+<html>
+
+    <head>
+
+        <title>
+            Lebenslauf, Timo Hauser
+        </title>
+
+        <style>
+
+            .body{
+                maring 100000xp
+            }
+
+            .div1{
+                display: grid;
+                grid-gap: 0;
+                grid-template-columns: repeat(4, 2fr) ;
+                grid-template-rows: 2fr;
+                grid-template-areas: 
+                "p n n n";
+            }
+
+                .pic{
+                    grid-area: p;
+                }
+
+                .name{
+                    grid-area: n;
+                }
+
+            .div2{
+                display: grid;
+                grid-gap: 0;
+                grid-template-columns:repeat(4, 2fr);
+                grid-template-rows: repeat(3, 2fr);
+                grid-template-areas:
+                "e c c c"
+                "i d1 d1 d1"
+                "e d2 d2 d2";
+            }
+
+                .empty{
+                    grid-area: e;
+                }
+
+                .intro{
+                    grid-area: i;
+                }
+
+                .contacts {
+                    grid-area: c;
+                }
+
+                .description1{
+                    grid-area: d1;
+                }
+
+                .description2{
+                    grid-area: d2;
+                }
+
+
+
+
+
+            .div3{
+                display: grid;
+                grid-gap: 0;
+                grid-template-columns: 2fr 3fr 3fr;
+                grid-template-rows: repeat(3, 2fr);
+                grid-template-areas:
+                "e t1 t2"
+                "exp t3 t4"
+                "e t5 t6";
+            }
+                .empty{
+                    grid-area: e;
+                }            
+
+                .expertise{
+                    grid-area: exp;
+                }
+
+                .text1{
+                    grid-area: t1;
+                }
+
+                .text2{
+                    grid-area: t2;
+                }
+                .text3{
+                    grid-area: t3;
+                }
+                .text4{
+                    grid-area: t4;
+                }
+                .text5{
+                    grid-area: t5;
+                }
+                .text6{
+                    grid-area: t6;
+                }
+
+
+            .div4{
+                display: grid;
+                grid-gap: 0;
+                grid-template-columns:2fr 3fr 3fr;
+                grid-template-rows: repeat(2, 2fr);
+                grid-template-areas: 
+                "? ? ?"
+                "? ? ?";
+            }
+ 
+        </style>
+
+        <!-- Color rgb(253 177 52) rgb(255 189 80)-->
+
+    </head>
+
+    <body class="body">
+    
+        <divc class="div1">
+
+            <div class="pic">
+                <img src="sad.png" alt="sad" width="100px">
+            </div>
+
+            <div class="name">
+                Timo
+                </br>Hauser
+                </br>
+                </br> Informatik-Praktikant & Elektro Monteur
+            </div>
+
+
+        </div>
+
+        <div class="div2">
+
+            <div class="empty"></div>
+
+            <div class="intro">intro</div>
+
+            <div class="contacts">contacts</div>
+
+            <div class="description1">desc1</div>
+
+            <div class="description2">desc2</div>
+        
+        </div>
+
+        <div class="div3">
+
+
+            <div class="empty"></div>
+
+            <div class="expertise">expertise</div>
+
+            <div class="text1">
+                t1
+            </div>
+
+            <div class="text2">
+                t2
+            </div>
+
+            <div class="text3">
+                t3
+            </div>
+
+            <div class="text4">
+                t4
+            </div>
+
+            <div class="text5">
+                t5
+            </div>
+
+            <div class="text6">
+                t6
+            </div>
+
+        </div>
+
+        <div class="div4">
+
+        </div>
+
+    </body>
+
+
+</html>
