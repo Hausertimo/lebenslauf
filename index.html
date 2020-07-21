@@ -35,14 +35,10 @@
                 grid-template-columns:repeat(4, 2fr);
                 grid-template-rows: repeat(3, 2fr);
                 grid-template-areas:
-                "e c c c"
+                ". c c c"
                 "i d1 d1 d1"
-                "e d2 d2 d2";
+                ". d2 d2 d2";
             }
-
-                .empty{
-                    grid-area: e;
-                }
 
                 .intro{
                     grid-area: i;
@@ -60,23 +56,16 @@
                     grid-area: d2;
                 }
 
-
-
-
-
             .div3{
                 display: grid;
                 grid-gap: 0;
                 grid-template-columns: 2fr 3fr 3fr;
                 grid-template-rows: repeat(3, 2fr);
                 grid-template-areas:
-                "e t1 t2"
+                ". t1 t2"
                 "exp t3 t4"
-                "e t5 t6";
-            }
-                .empty{
-                    grid-area: e;
-                }            
+                ". t5 t6";
+            }   
 
                 .expertise{
                     grid-area: exp;
@@ -102,7 +91,26 @@
                     grid-area: t6;
                 }
 
+            .div4{
+                display: grid;
+                grid-gap: 0;
+                grid-template-columns: 2fr 6fr;
+                grid-template-rows: repeat(2, 2fr);
+                grid-template-areas: 
+                "sk skp skp skp"
+                "sk skp skp skp";
+            }
  
+            .skills{
+                grid-area: sk;
+                background-color: grey;
+            }
+
+            .skillproz{
+                grid-area: skp;
+                background-color: green;
+            }
+
         </style>
 
         <!-- Color rgb(253 177 52) rgb(255 189 80)-->
@@ -129,8 +137,6 @@
 
         <div class="div2">
 
-            <div class="empty"></div>
-
             <div class="intro">intro</div>
 
             <div class="contacts">contacts</div>
@@ -142,9 +148,6 @@
         </div>
 
         <div class="div3">
-
-
-            <div class="empty"></div>
 
             <div class="expertise">expertise</div>
 
@@ -170,6 +173,18 @@
 
             <div class="text6">
                 t6
+            </div>
+
+        </div>
+
+        <div class="div4">
+
+            <div class="skills">
+                skills
+            </div>
+
+            <div class="skillproz">
+                skillsproz
             </div>
 
         </div>
